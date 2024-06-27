@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- inclusione Vue 3.x -->
     <script src="https://unpkg.com/vue@3"></script>
-    <!-- inclusione Axios -->
+    <!-- inclusione Ajax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
         integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+
+    <!-- contenitore del istanza di app in Vue -->
+    <div id="app">
+
+        <ul>
+            <li v-for ="email in emails" :key="email">{{email}}</li>
+        </ul>
+
+    </div>
+
+
     <!-- script -->
      <script src="js/main.js"></script>
     <!-- script -->
